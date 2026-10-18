@@ -1,25 +1,22 @@
-# macOS
 .DS_Store
-
-# Python
 __pycache__/
 *.pyc
 .venv/
 
-# Airflow runtime
+# Airflow local files
 airflow/.env
 airflow/logs/
 airflow/config/
 
-# Secrets and local datasets
+# Secrets
 .env
 .env.*
 !.env.example
+
+# Local data
 data/
 *.csv
 *.parquet
 
-# Azure credentials
-.azure/
-*.pem
-*.key
+# Temporary Git backup
+airflow-git-backup/
