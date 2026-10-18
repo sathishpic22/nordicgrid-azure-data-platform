@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Airflow runtime
+airflow/.env
+airflow/logs/
+airflow/config/
+
+# Secrets and local datasets
+.env
+.env.*
+!.env.example
+data/
+*.csv
+*.parquet
+
+# Azure credentials
+.azure/
+*.pem
+*.key

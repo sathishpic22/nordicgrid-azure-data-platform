@@ -1,0 +1,12 @@
+{"timestamp":"2026-10-18T20:51:26.322902Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-18T20:51:26.323457Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/nordicgrid_airflow.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-18T20:51:26.361081Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-10-18T20:51:26.361256Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-10-18T20:51:26.361309Z","level":"info","event":"Current task name:extract","logger":"task.stdout"}
+{"timestamp":"2026-10-18T20:51:26.361351Z","level":"info","event":"Dag name:nordicgrid_airflow","logger":"task.stdout"}
+{"timestamp":"2026-10-18T20:51:26.361391Z","level":"info","event":"Extracting Norwegian energy data","logger":"task.stdout"}
+{"timestamp":"2026-10-18T20:51:26.355640Z","level":"info","event":"Done. Returned value was: {'source': 'Elhub', 'records': 100}","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}
+{"timestamp":"2026-10-18T20:51:26.355798Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01a150c8-9145-71b4-801a-8fb87a5acb0f'), task_id='extract', dag_id='nordicgrid_airflow', run_id='manual__2026-10-18T20:51:24.068376+00:00', try_number=1, dag_version_id=UUID('01a150c6-b07d-7eb4-9d65-17fa12222b69'), map_index=-1, hostname='dbd22cd32cbf', context_carrier={}, task=<Task(_PythonDecoratedOperator): extract>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2026, 10, 18, 20, 51, 24, 835195, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}
+{"timestamp":"2026-10-18T20:51:26.373272Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-10-18T20:51:26.375205Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-10-18T20:51:26.375570Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): extract>","logger":"task.stdout"}
